@@ -17,7 +17,7 @@ jobs:
           python3 -c "
           import os
           key = os.environ['ANTHROPIC_API_KEY']
-          with open('mf-forensic-analyser.html', 'r') as f:
+          with open('index.html', 'r') as f:
               content = f.read()
           content = content.replace('%%ANTHROPIC_API_KEY%%', key)
           with open('mf-forensic-analyser.html', 'w') as f:
